@@ -4,17 +4,24 @@ public class Main {
     public static void main(String[] args) {
         Shape shape = new Shape();
 
-        shape.square = 24.0; // доступ к public полю
-        System.out.println(shape.square);
+        System.out.println(shape.i);
+        System.out.println(shape.b);
+        System.out.println(shape.c);
+        System.out.println(shape.f);
 
-        //задаем параметры нашему объекту
-        shape.setHeight(200);
-        shape.getHeight();
+        System.out.println(shape);
 
-        shape.setLength(144);
-        shape.getLength();
+//        shape.square = 24.0; // доступ к public полю
+//        System.out.println(shape.square);
+//
+//        //задаем параметры нашему объекту
+//        shape.setHeight(200);
+//        shape.getHeight();
+//
+//        shape.setLength(144);
+//        shape.getLength();
 
-        // выводим объект через метод
-        shape.viewShape();
+//        // выводим объект через метод
+//        shape.viewShape();
     }
 }
