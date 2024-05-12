@@ -9,7 +9,8 @@ public class Main {
         doSmth();      // в самом классе, без использованияя класса
 
         // вызов не статического метода или поля из статического контекста запрещено и приводит к ошибке компиляции
-        // System.out.println(Main.count);
+        Main m = new Main();
+         System.out.println(m.count);
     }
     public static void doSmth() {
         System.out.println("Hello !");
